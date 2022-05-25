@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section {
+  width: 85vw;
+  max-width: 22rem;
+  margin: 0 auto;
+  background-color: #14253d;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  /* need to remove the color */
+  color: white;
+}
+
+main section .hr {
+  border-bottom: 1px solid #2f415b;
+}
+
+main section .img-container {
+  position: relative;
+}
+
+main section .img-container .overlay {
+  background: rgba(0, 255, 247, 0.3);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .img-container .overlay .fa-solid {
+  font-size: 2rem;
+}
+
+main section .img-container:hover .overlay {
+  opacity: 1;
+}
+
+main section .img-container > img {
+  width: 100%;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+main section .img-container > img:hover img, main section .img-container > img:active {
+  background: #00fff7;
+  z-index: 2;
+}
+
+main section .text-container h1 {
+  margin: 20px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main section .text-container h1:hover, main section .text-container h1:active {
+  color: #00fff7;
+}
+
+main section .text-container .main-text {
+  color: #8bacda;
+  font-size: 18px;
+}
+
+main section .text-container .nft-time {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section .text-container .nft-time .ethereum p {
+  font-weight: 600;
+  color: #00fff7;
+}
+
+main section .text-container .nft-time div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section .text-container .nft-time div p {
+  margin-left: 5px;
+  color: #8bacda;
+}
+
+main section .nft-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+main section .nft-footer img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+main section .nft-footer p {
+  color: #8bacda;
+}
+
+main section .nft-footer p .name {
+  cursor: pointer;
+  color: white;
+}
+
+main section .nft-footer p .name:hover, main section .nft-footer p .name:active {
+  color: #00fff7;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #00fff7;
+  height: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

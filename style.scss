@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$mainBackground: hsl(217, 54%, 11%);
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  section {
+    width: 85vw;
+    max-width: 22rem;
+    margin: 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.4rem;
+    border-radius: 1rem;
+
+    /* need to remove the color */
+    color: hsl(0, 0%, 100%);
+    .hr {
+      border-bottom: 1px solid hsl(215, 32%, 27%);
+    }
+    .img-container {
+      position: relative;
+
+      .overlay {
+        background: hsla(178, 100%, 50%, 0.3);
+        position: absolute;
+        height: 99%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        border-radius: 0.9rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .fa-solid {
+          font-size: 2rem;
+        }
+      }
+
+      &:hover .overlay {
+        opacity: 1;
+      }
+    }
+    .img-container > img {
+      width: 100%;
+      border-radius: 0.9rem;
+
+      cursor: pointer;
+
+      &:hover img,
+      &:active {
+        background: hsl(178, 100%, 50%);
+        z-index: 2;
+      }
+    }
+    .text-container {
+      h1 {
+        margin: 20px 0;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+          color: hsl(178, 100%, 50%);
+        }
+      }
+      .main-text {
+        color: hsl(215, 51%, 70%);
+        font-size: 18px;
+      }
+      .nft-time {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .ethereum {
+          p {
+            font-weight: 600;
+            color: hsl(178, 100%, 50%);
+          }
+        }
+        div {
+          display: flex;
+          p {
+            margin-left: 5px;
+            color: hsl(215, 51%, 70%);
+          }
+        }
+      }
+    }
+
+    .nft-footer {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        border: 1px solid hsl(0, 0%, 100%);
+        border-radius: 50%;
+      }
+
+      p {
+        color: hsl(215, 51%, 70%);
+        .name {
+          cursor: pointer;
+          color: hsl(0, 0%, 100%);
+
+          &:hover,
+          &:active {
+            color: hsl(178, 100%, 50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(178, 100%, 50%);
+    height: 3rem;
+}
