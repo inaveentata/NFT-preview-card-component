@@ -28,8 +28,8 @@ Click [here](./Screenshot%202022-05-26%20at%2002-20-05%20Frontend%20Mentor%20NFT
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution url](https://github.com/inaveentata/NFT-preview-card-component)
+- Live Site URL: [Live site url](https://nft-preview-card-26-may-2022.netlify.app/)
 
 ## My process
 
